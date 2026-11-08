@@ -1,0 +1,14 @@
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Keep the local safety copy out of the portfolio repository
+EcommerceEDA_backup.ipynb
+
+# Dataset licence and redistribution terms have not been verified
+data/raw/consumer_shopping_behavior_survey.csv
