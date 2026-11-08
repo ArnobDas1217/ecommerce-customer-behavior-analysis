@@ -41,6 +41,25 @@ The notebook includes respondent and age-group summaries, online and in-store pr
 
 In the validated analysis, review trust and satisfaction have near-zero correlations (Pearson *r* = −0.0179, *p* = 0.7092; Spearman *r* = −0.0216, *p* = 0.6524; 437 complete pairs). The Kruskal–Wallis comparison of regret scores by BNPL group is nonsignificant (*H* = 1.826, *p* = 0.4013; group sizes 254, 127, and 56). These results do not provide statistically significant evidence of an association or group difference in this sample; they do not prove that no population relationship exists and do not establish causation.
 
+## Visualizations
+
+The six charts below are exported from the analysis notebook.
+
+| Respondent age distribution | Satisfaction by age group |
+| --- | --- |
+| ![Histogram of respondent ages with a density curve](images/respondent_age_distribution.png) | ![Mean online shopping satisfaction by age group, with valid response counts](images/satisfaction_by_age_group.png) |
+| Shows the distribution of numeric ages after blank and nonnumeric entries are excluded. | Compares mean satisfaction scores across age groups; labels show valid response counts. |
+
+| Preferred payment method by shopping mode | Discount importance by shopping mode |
+| --- | --- |
+| ![Heatmap of preferred payment method shares within each shopping mode](images/payment_method_by_shopping_mode.png) | ![Distribution of discount importance scores by shopping mode](images/discount_importance_by_shopping_mode.png) |
+| Shows each payment method's share within respondents' preferred shopping mode. | Boxplots compare discount importance scores across online, mixed, and in-store shoppers; labels show valid score counts. |
+
+| Purchase regret by BNPL use | Review trust and shopping satisfaction |
+| --- | --- |
+| ![Purchase regret score distributions by buy-now-pay-later use](images/purchase_regret_by_bnpl_use.png) | ![Review trust versus online shopping satisfaction with fitted trend line](images/review_trust_vs_satisfaction.png) |
+| Boxplots compare regret frequency across BNPL use groups; labels show pairwise-complete counts. | Jittered points show paired trust and satisfaction scores, with a fitted linear trend line. |
+
 ## Project structure
 
 ```text
@@ -48,6 +67,13 @@ Ecommerce Customer Behavior Analysis/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
+├── images/
+│   ├── respondent_age_distribution.png
+│   ├── satisfaction_by_age_group.png
+│   ├── payment_method_by_shopping_mode.png
+│   ├── discount_importance_by_shopping_mode.png
+│   ├── purchase_regret_by_bnpl_use.png
+│   └── review_trust_vs_satisfaction.png
 ├── data/
 │   └── raw/
 │       └── consumer_shopping_behavior_survey.csv
